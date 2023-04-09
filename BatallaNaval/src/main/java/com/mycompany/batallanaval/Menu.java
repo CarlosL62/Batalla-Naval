@@ -4,6 +4,8 @@
  */
 package com.mycompany.batallanaval;
 
+import Tableros.MenuTableros;
+
 /**
  *
  * @author carlo
@@ -13,6 +15,8 @@ public class Menu extends javax.swing.JFrame {
     /**
      * Creates new form Menu
      */
+    
+
     public Menu() {
         initComponents();
     }
@@ -36,6 +40,7 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        setSize(new java.awt.Dimension(500, 600));
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -43,34 +48,39 @@ public class Menu extends javax.swing.JFrame {
         btnPuntajes.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 14)); // NOI18N
         btnPuntajes.setForeground(new java.awt.Color(255, 255, 255));
         btnPuntajes.setText("Puntajes");
-        jPanel1.add(btnPuntajes, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 120, -1));
+        jPanel1.add(btnPuntajes, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 120, -1));
 
         btnTableros.setBackground(new java.awt.Color(0, 0, 0));
         btnTableros.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 14)); // NOI18N
         btnTableros.setForeground(new java.awt.Color(255, 255, 255));
         btnTableros.setText("Tableros");
-        jPanel1.add(btnTableros, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 120, -1));
+        btnTableros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTablerosActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnTableros, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 300, 120, -1));
 
         btnIniciarPartida.setBackground(new java.awt.Color(0, 0, 0));
         btnIniciarPartida.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 14)); // NOI18N
         btnIniciarPartida.setForeground(new java.awt.Color(255, 255, 255));
         btnIniciarPartida.setText("Iniciar Partida");
-        jPanel1.add(btnIniciarPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 120, -1));
+        jPanel1.add(btnIniciarPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 120, -1));
 
         btnNuevaPartida.setBackground(new java.awt.Color(0, 0, 0));
         btnNuevaPartida.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 14)); // NOI18N
         btnNuevaPartida.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevaPartida.setText("Nueva Partida");
-        jPanel1.add(btnNuevaPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 120, -1));
+        jPanel1.add(btnNuevaPartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, 120, -1));
 
         lblTitulo.setBackground(new java.awt.Color(51, 51, 51));
-        lblTitulo.setFont(new java.awt.Font("Teko SemiBold", 0, 36)); // NOI18N
+        lblTitulo.setFont(new java.awt.Font("Artifakt Element Heavy", 0, 36)); // NOI18N
         lblTitulo.setForeground(new java.awt.Color(255, 153, 0));
         lblTitulo.setText("BATALLA NAVAL");
-        jPanel1.add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
+        jPanel1.add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, -1, -1));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondomenu.jpg"))); // NOI18N
-        jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,6 +95,15 @@ public class Menu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnTablerosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTablerosActionPerformed
+        // TODO add your handling code here:
+        MenuTableros menuTableros = new MenuTableros();
+        menuTableros.setLocationRelativeTo(null);
+        menuTableros.setVisible(true);
+        // Se cierra este formulario
+        this.dispose();
+    }//GEN-LAST:event_btnTablerosActionPerformed
 
     /**
      * @param args the command line arguments
