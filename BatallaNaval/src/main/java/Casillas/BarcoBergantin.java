@@ -18,7 +18,6 @@ public class BarcoBergantin extends Barcos{
         super.ruta = "/imagenes/BarcoMediano.png";
         super.puntos = 40;
         this.tableros = tableros;
-        //cambiarIcono();
     }
 
 }

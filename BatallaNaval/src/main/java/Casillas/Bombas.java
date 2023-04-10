@@ -17,6 +17,10 @@ import java.util.logging.Logger;
  */
 public class Bombas extends Casillas{
     
+    // Instanciamos las explosiones de cada tipo de bomba
+    ExplosionesBombas explosionesBombas = new ExplosionesBombas();
+    
+    
     public Bombas(){
         super.tipoCasilla = 0;
     }

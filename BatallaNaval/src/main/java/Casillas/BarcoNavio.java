@@ -18,6 +18,5 @@ public class BarcoNavio extends Barcos{
         super.ruta = "/imagenes/BarcoGrande.png";
         super.puntos = 25;
         this.tableros = tableros;
-        //cambiarIcono();
     }
 }

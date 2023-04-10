@@ -18,6 +18,5 @@ public class BarcoPailebot extends Barcos{
         super.ruta = "/imagenes/BarcoPequeño.png";
         super.puntos = 100;
         this.tableros = tableros;
-        //cambiarIcono();
     }
 }

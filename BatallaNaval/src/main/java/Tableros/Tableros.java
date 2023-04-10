@@ -37,19 +37,13 @@ public class Tableros{
     public void setCantidadBarcosTablero(int cantidadBarcosTablero) {
         this.cantidadBarcosTablero = cantidadBarcosTablero;
     }
-
-    public int getCantidadBombasPartida() {
-        return cantidadBombasPartida;
-    }
-
-    public void setCantidadBombasPartida(int cantidadBombasPartida) {
-        this.cantidadBombasPartida = cantidadBombasPartida;
-    }
- 
-    
+     
     private int cantidadBombasTablero;
     private int cantidadBarcosTablero;
-    private int cantidadBombasPartida;
+    
+    //Espacios en el arreglo para cada tipo de bomba
+    //0 = normal, 1 = misil, 2 = torpedo, 3 = hecatombe
+    protected int[] cantidadBombasPartida = new int[4];
     private int puntosPartida;
 
     public int getPuntosPartida() {
@@ -59,12 +53,6 @@ public class Tableros{
     public void setPuntosPartida(int puntosPartida) {
         this.puntosPartida = puntosPartida;
     }
-    
-    public Tableros(){
-        
-    }
-    
-    
     
     public void mostrarTablero(){
         String texto = "";

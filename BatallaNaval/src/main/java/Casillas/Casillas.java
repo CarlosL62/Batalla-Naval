@@ -106,7 +106,6 @@ public class Casillas extends JButton{
     
     protected Tableros tableros;
     
-    
     protected String ruta = "";
     
     public Casillas[][] accionBoton(Casillas[][] casillas) throws IOException{
