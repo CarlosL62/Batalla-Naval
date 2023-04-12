@@ -13,24 +13,9 @@ import Casillas.BombaHecatombe;
 import Casillas.BombaMisil;
 import Casillas.BombaTorpedo;
 import Casillas.Casillas;
-import Casillas.ExplosionesBombas;
-import com.mycompany.batallanaval.Menu;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -41,41 +26,6 @@ public class ControladorPartida {
     public ControladorPartida(Inventario inventario){
         this.inventario = inventario;
     }
-
-//    public int getCantidadBombasTablero() {
-//        return cantidadBombasTablero;
-//    }
-//
-//    public void setCantidadBombasTablero(int cantidadBombasTablero) {
-//        this.cantidadBombasTablero = cantidadBombasTablero;
-//    }
-//
-//    public int getCantidadBarcosTablero() {
-//        return cantidadBarcosTablero;
-//    }
-//
-//    public void setCantidadBarcosTablero(int cantidadBarcosTablero) {
-//        this.cantidadBarcosTablero = cantidadBarcosTablero;
-//    }
-//
-//    private int cantidadBombasTablero;
-//    private int cantidadBarcosTablero;
-//
-//    //Espacios en el arreglo para cada tipo de bomba
-//    //0 = normal, 1 = misil, 2 = torpedo, 3 = hecatombe
-//    protected int[] cantidadBombasPartida = new int[4];
-//
-//    private int puntosPartida;
-//
-//    public int getPuntosPartida() {
-//        return puntosPartida;
-//    }
-//
-//    public void setPuntosPartida(int puntosPartida) {
-//        this.puntosPartida = puntosPartida;
-//    }
-
-    //INICIO DE NUEVO CODIGO
 
     private Casillas[][] botonesAsignados;
 
