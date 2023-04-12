@@ -4,7 +4,8 @@
  */
 package Casillas;
 
-import Tableros.Tableros;
+import Partida.ControladorPartida;
+import Partida.Inventario;
 
 /**
  *
@@ -12,10 +13,10 @@ import Tableros.Tableros;
  */
 public class BombaMisil extends Bombas{
     
-    public BombaMisil(Tableros tableros){
+    public BombaMisil(Inventario inventario){
         super.caracterCasillas = "Misil";
         super.ruta = "/imagenes/BombaMisil.png";
-        this.tableros = tableros;
+        this.inventario = inventario;
     }
     
     @Override

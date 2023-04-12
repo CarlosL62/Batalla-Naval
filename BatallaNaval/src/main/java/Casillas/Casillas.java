@@ -4,7 +4,8 @@
  */
 package Casillas;
 
-import Tableros.Tableros;
+import Partida.ControladorPartida;
+import Partida.Inventario;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -26,10 +27,6 @@ import javax.swing.SwingConstants;
  * @author carlo
  */
 public class Casillas extends JButton{
-//    final String WATER = "fts/water2.png";
-//    final String BOMB = "fts/bomb1.png";
-//    final String FLAG = "fts/buoy.png";
-//    final String EXPLOTE = "fts/explosion.png";
     
     protected String caracterCasillas;
 
@@ -104,7 +101,7 @@ public class Casillas extends JButton{
 //        Image newimg = myPicture.getScaledInstance(tamañoColumna, tamañoFila, java.awt.Image.SCALE_SMOOTH); 
 //    }
     
-    protected Tableros tableros;
+    protected Inventario inventario;
     
     protected String ruta = "";
     

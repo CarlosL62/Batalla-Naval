@@ -4,7 +4,8 @@
  */
 package Casillas;
 
-import Tableros.Tableros;
+import Partida.ControladorPartida;
+import Partida.Inventario;
 import java.io.IOException;
 
 /**
@@ -13,10 +14,10 @@ import java.io.IOException;
  */
 public class BarcoPailebot extends Barcos{
    
-    public BarcoPailebot(Tableros tableros) throws IOException{
+    public BarcoPailebot(Inventario inventario) throws IOException{
         super.caracterCasillas = "Pailebot";
         super.ruta = "/imagenes/BarcoPequeño.png";
         super.puntos = 100;
-        this.tableros = tableros;
+        this.inventario = inventario;
     }
 }

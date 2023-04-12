@@ -30,8 +30,8 @@ public class Barcos extends Casillas{
         if (!revelada) {
             revelada = true;
             cambiarIcono();
-            tableros.setCantidadBarcosTablero(tableros.getCantidadBarcosTablero() - 1);
-            tableros.setPuntosPartida(tableros.getPuntosPartida() + puntos);
+            inventario.setCantidadBarcosTablero(inventario.getCantidadBarcosTablero() - 1);
+            inventario.setPuntosPartida(inventario.getPuntosPartida() + puntos);
             //controlPuntajes();
         }
         return casillas;

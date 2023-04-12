@@ -4,7 +4,8 @@
  */
 package Casillas;
 
-import Tableros.Tableros;
+import Partida.ControladorPartida;
+import Partida.Inventario;
 
 /**
  *
@@ -12,10 +13,10 @@ import Tableros.Tableros;
  */
 public class Agua extends Casillas{
    
-    public Agua(Tableros tableros){
+    public Agua(Inventario inventario){
         super.caracterCasillas = "Agua";
         super.ruta = "/imagenes/mar.png";
         super.tipoCasilla = 2;
-        this.tableros = tableros;
+        this.inventario = inventario;
     }
 }

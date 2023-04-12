@@ -4,7 +4,7 @@
  */
 package Casillas;
 
-import Tableros.MenuTableros;
+import Partida.Partida;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;

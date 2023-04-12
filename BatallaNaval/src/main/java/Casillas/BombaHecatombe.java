@@ -4,7 +4,8 @@
  */
 package Casillas;
 
-import Tableros.Tableros;
+import Partida.ControladorPartida;
+import Partida.Inventario;
 
 /**
  *
@@ -12,10 +13,10 @@ import Tableros.Tableros;
  */
 public class BombaHecatombe extends Bombas{
     
-    public BombaHecatombe(Tableros tableros){
+    public BombaHecatombe(Inventario inventario){
         super.caracterCasillas = "Hecatombe";
         super.ruta = "/imagenes/BombaHecatombe.png";
-        this.tableros = tableros;
+        this.inventario = inventario;
     }
     
     @Override

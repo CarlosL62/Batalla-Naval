@@ -4,7 +4,8 @@
  */
 package Casillas;
 
-import Tableros.Tableros;
+import Partida.ControladorPartida;
+import Partida.Inventario;
 import java.io.IOException;
 
 /**
@@ -13,11 +14,11 @@ import java.io.IOException;
  */
 public class BarcoBergantin extends Barcos{
     
-    public BarcoBergantin(Tableros tableros) throws IOException{
+    public BarcoBergantin(Inventario inventario) throws IOException{
         super.caracterCasillas = "Bergantin";
         super.ruta = "/imagenes/BarcoMediano.png";
         super.puntos = 40;
-        this.tableros = tableros;
+        this.inventario = inventario;
     }
 
 }
